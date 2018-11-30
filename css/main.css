@@ -349,7 +349,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-top: 40px;
 	margin-left: 50px;
 	margin-right: auto;
-	border: 10px ridge #aebe8c;
+	border: 10px solid #aebe8c;
 	width: 350px;
 	height: 650px;
 	background-color: #233027;
@@ -378,7 +378,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	margin-top: 40px;
 	margin-left: 20px;
 	margin-right: 50px;
-	border: 10px ridge #2b3b30;
+	border: 10px solid #2b3b30;
 	height: 650px;
 	width: 500px;
 	background-color: #aebe8c;
