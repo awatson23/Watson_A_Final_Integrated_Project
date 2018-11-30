@@ -1,0 +1,399 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*basic reset*/
+/*browsers have built in values for elements so we'll reset a few things to zero, you can add to this or remove items as needed*/
+
+div,p,body,header,footer,section,article,nav 
+{ 
+	margin: 0; 
+	padding: 0; 
+}	
+
+img 
+{ 
+	border: none; /*Remove border if image is a link*/
+	margin: 0; 
+	padding: 0; 
+}
+
+/*html selectors*/
+
+body 
+{
+	font-family: "Javanese Text", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	background-color: #dd8f3d;
+	background-image: url("data:image/svg+xml,%3Csvg width='80' height='88' viewBox='0 0 80 88' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22 21.91V26h-2c-9.94 0-18 8.06-18 18 0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73 3.212-6.99 9.983-12.008 18-12.73V62h2c9.94 0 18-8.06 18-18 0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73-3.212 6.99-9.983 12.008-18 12.73zM54 58v4.696c-5.574 1.316-10.455 4.428-14 8.69-3.545-4.262-8.426-7.374-14-8.69V58h-5.993C12.27 58 6 51.734 6 44c0-7.732 6.275-14 14.007-14H26v-4.696c5.574-1.316 10.455-4.428 14-8.69 3.545 4.262 8.426 7.374 14 8.69V30h5.993C67.73 30 74 36.266 74 44c0 7.732-6.275 14-14.007 14H54zM42 88c0-9.94 8.06-18 18-18h2v-4.09c8.016-.722 14.787-5.738 18-12.73v7.434c-3.545 4.262-8.426 7.374-14 8.69V74h-5.993C52.275 74 46 80.268 46 88h-4zm-4 0c0-9.943-8.058-18-18-18h-2v-4.09c-8.012-.722-14.785-5.738-18-12.73v7.434c3.545 4.262 8.426 7.374 14 8.69V74h5.993C27.73 74 34 80.266 34 88h4zm4-88c0 9.943 8.058 18 18 18h2v4.09c8.012.722 14.785 5.738 18 12.73v-7.434c-3.545-4.262-8.426-7.374-14-8.69V14h-5.993C52.27 14 46 7.734 46 0h-4zM0 34.82c3.213-6.992 9.984-12.008 18-12.73V18h2c9.94 0 18-8.06 18-18h-4c0 7.732-6.275 14-14.007 14H14v4.696c-5.574 1.316-10.455 4.428-14 8.69v7.433z' fill='%23233027' fill-opacity='0.89' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+
+/*a:link is for not visited(standard unclicked link), 
+a:visited is for visited, and just a applies to both.*/
+/*a will also style anchor links*/
+
+a:link, a:visited 
+{ 
+ 	text-decoration:none; 	
+}
+
+a:hover, a:active 
+{ 
+	text-decoration:none; 
+}
+
+/*hide elements from browser but show for doc outline*/
+
+.hidden
+{
+	display: none;
+}
+
+/*section is block level and no width specidied therefore stretches full screen*/
+#topBar
+{
+	background-color: #233027;
+	height: 20px;
+}
+
+/*Site Container*/
+/*This is essentially a box that we place the whole site in.  
+We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 20px (960px) so it fits on 1024x768 screens.*/
+
+#siteContainer 
+{
+	margin: 0 auto;
+	width: 1025px;
+	/*background-color: #c78744;*/
+	background-color: #d3914a;
+}
+
+/*This is a flex container*/
+#mainHeader
+{
+	background-color: #aebe8c;
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+
+}
+
+/*This is a flex item*/
+#logo
+{
+	margin-top: 10px;
+	margin-bottom:10px;
+	margin-left:25px;
+}
+
+/*This is also a flex item*/
+/*We use margin left auto to send it all the way to the right*/
+.mainNav
+{
+	margin-left: auto;
+	margin-top: 63px;
+	display: inline;
+	width: 500px;
+	background-color:;
+}
+
+.mainNav ul
+{
+	list-style-type: none;
+	padding: 0;
+}
+
+.mainNav ul li
+{
+	display: inline;
+	font-size: 20px;
+	margin-left: 25px;
+}
+
+.mainNav ul li a
+{
+	color: #000000;
+	padding: 4px;
+}
+
+.mainNav ul li a:hover
+{
+	background-color: #e2a449;
+	padding: 4px;
+}
+
+.promo 
+{
+	display: flex;
+	flex-direction: column;
+  	justify-content: flex-start;
+  	border-bottom: solid 6px #253329;
+  	background-color: #dd8f3d;
+}
+
+
+
+#promoText
+{
+	color: #233027;
+	font-size: 25px;
+	text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+
+#productInfo 
+{
+	margin-top: 40px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+	border-bottom: solid 1px;
+	padding-bottom: 40px;
+}
+
+#productInfo p 
+{
+	line-height: 300px;
+	display: flex;
+	flex-direction: row;
+}
+
+#mugs
+{
+	margin-left: 20px;
+	border-radius: 100px;
+}
+
+#welcome
+{
+
+}
+
+#aboutus
+{
+	color: #233027;
+	font-size: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 9px;
+}
+
+#mainFooter 
+{
+	display: flex;
+	flex-direction: row;
+  	justify-content: flex-start;
+  	background-color: #233027;
+  	height: 160px;
+}
+
+#contact
+{
+	margin-left: 75px;
+	font-size: 13px;
+	width: 340px;
+	color: white;
+}
+
+#contactUs
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.socialmedia
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#twitter
+{
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+#facebook
+{
+	margin-top: 50px;
+	margin-left: 20px;
+}
+
+#instagram
+{
+	margin-top: 50px;
+	margin-left: 23px;
+}
+
+
+#copyRight 
+{
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+	width: 300px;
+	color: white;
+}
+
+/*PAGE 2 (SHOP) CSS*/
+
+
+#itemsFeat
+{
+	font-size: 43px;
+	color: #dd8f3d;
+	text-align: center;
+	background-color: #233027;
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
+#productImages 
+{
+	
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+  	justify-content: space-between;
+  	background-color: #aebe8c;
+}
+	
+.productImg 
+{
+	padding-top: 20px;
+	width: 280px;
+	text-align: center;
+	font-size: 17px;
+	border: solid 4px #253329;
+}
+
+.productImg 
+{
+	font-style: "Javanese Style";
+	font-weight: bold;
+	color: #1b251e;
+}
+
+#formArea
+{
+	display: flex;
+	flex-direction: row;
+}
+
+#aboutHolds
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #233027;
+	color: white;
+	width: 600px;
+}
+
+#aboutHolds p
+{
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-style: "Javanese Style";
+	font-size: 18px;
+	text-align: center;
+}
+
+#decal
+{
+	margin-left: 265px;
+}
+
+#formfillArea
+{
+	padding: 10px 10px 10px 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	background-color: #233027;
+	display: flex;
+	width: 375px;
+}
+
+#formfillArea label
+{
+	font-size: 17px;
+	font-family: "Javanese Text";
+	color: #dd8f3d;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#submit
+{
+	background-color: #dd8f3d;
+}
+
+
+
+/*PAGE 3 (MENU) CSS*/
+
+#contentCon 
+{
+
+	padding-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+}
+
+#foodpicDiv
+{
+	margin-top: 40px;
+	margin-left: 50px;
+	margin-right: auto;
+	border: 10px ridge #aebe8c;
+	width: 350px;
+	height: 650px;
+	background-color: #233027;
+}
+
+#sandwhichimg
+{
+	margin-top: 30px;
+	margin-left: 40px;
+}
+
+#bakedimg
+{
+	margin-left: 40px;
+}
+
+#drinksimg
+{
+	margin-left: 40px;
+}
+
+
+
+#menuDiv
+{
+	margin-top: 40px;
+	margin-left: 20px;
+	margin-right: 50px;
+	border: 10px ridge #2b3b30;
+	height: 650px;
+	width: 500px;
+	background-color: #aebe8c;
+}
+
+#menuimg
+{
+	margin-top: 30px;
+	margin-left: 50px;
+}
+
+
+
+
+
+
+
+
