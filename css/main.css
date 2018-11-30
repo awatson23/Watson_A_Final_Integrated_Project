@@ -254,7 +254,6 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 #productImages 
 {
 	
-	margin-top: 20px;
 	display: flex;
 	flex-direction: row;
   	justify-content: space-between;
@@ -267,7 +266,7 @@ We center the box using margin 0 auto and give it a fixed width of 920 + 20px + 
 	width: 280px;
 	text-align: center;
 	font-size: 17px;
-	border: solid 4px #253329;
+	border: solid 3px #253329;*/
 }
 
 .productImg 
